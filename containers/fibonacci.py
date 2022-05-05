@@ -69,6 +69,8 @@ class Fib:
     def __repr__(self):
         if self.n:
             return 'Fib(' + str(self.n) + ')'
+        else:
+            return 'Fib()'
 
 
 class FibIter:
