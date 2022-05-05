@@ -29,7 +29,7 @@ def range(a, b=None, c=None):
     '''
     if b is None:
         start = 0
-        end  = a
+        end = a
     else:
         start = a
         end = b
@@ -41,6 +41,6 @@ def range(a, b=None, c=None):
 
     i = start
 
-    while( next_step >=0 and i < end) or (next_step < 0 and i > end):
-        yield i 
+    while(next_step >= 0 and i < end) or (next_step < 0 and i > end):
+        yield i
         i += next_step
