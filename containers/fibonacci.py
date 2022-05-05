@@ -80,17 +80,17 @@ class FibIter:
     def __next__(self):
         if self.n is not None and self.i >= self.n:
             raise StopIteration
-        if self.i ==0:
-            self.i +=1
+        if self.i == 0:
+            self.i += 1
             return 1
-        elif self.i ==1:
-            self.i +=1
+        elif self.i == 1:
+            self.i += 1
             return 1
         else:
-            self.i+=1
+            self.i += 1
             self.f2 = self.f0 +self.f1
-            self.f0 =self.f1
-            self.f1 self.f2
+            self.f0 = self.f1
+            self.f1 = self.f2
             return self.f2
 
 
