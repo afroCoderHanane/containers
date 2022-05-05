@@ -71,7 +71,6 @@ class FibIter:
     '''
     This is the iterator helper class for the Fib class.
     '''
-
     def __init__(self, n):
         self.n = n
         self.i = 0
