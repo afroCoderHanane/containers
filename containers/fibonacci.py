@@ -60,11 +60,15 @@ class Fib:
     >>> list(Fib(5))
     [1, 1, 2, 3, 5]
     '''
-    def __init__(self, n):
+    def __init__(self, n=None):
         self.n = n
 
     def __iter__(self):
         return FibIter(self.n)
+
+    def __repr__(self):
+        if self.n:
+            return 'Fib(' + str(self.n) +')'
 
 
 class FibIter:
