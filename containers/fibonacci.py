@@ -60,13 +60,13 @@ class Fib:
     >>> list(Fib(5))
     [1, 1, 2, 3, 5]
     '''
-    def __init__(self,n):
+    def __init__(self, n):
         self.n = n
 
     def __iter__(self):
         return FibIter(self.n)
 
-    
+
 class FibIter:
     '''
     This is the iterator helper class for the Fib class.
@@ -88,7 +88,7 @@ class FibIter:
             return 1
         else:
             self.i += 1
-            self.f2 = self.f0 +self.f1
+            self.f2 = self.f0 + self.f1
             self.f0 = self.f1
             self.f1 = self.f2
             return self.f2
@@ -103,13 +103,13 @@ def fib_yield(n=None):
     f1 = 1
     yield 1
     if n == 1:
-        return 
+        return
     yield 1
     if n == 2:
         return
     i = 3
-    while true:
-        f2 = f0 +f1
+    while True:
+        f2 = f0 + f1
         yield f2
         f0 = f1
         f1 = f2
